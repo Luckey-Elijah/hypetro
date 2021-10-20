@@ -15,7 +15,7 @@ abstract class ViewController<B extends BlocBase<S>, S, V extends View,
     final bloc = context.read<B>();
     return BlocBuilder<B, S>(
       bloc: bloc,
-      // TODO (Luckey-Elijah): Add [buildWhen] API option.
+      // TODO(Luckey-Elijah): Add [buildWhen] API option, https://github.com/Luckey-Elijah/hypetro/issues/1
       // Determine if design should be:
       // - parameter in constructor (I don't think I prefer this.)
       // - a method to be optionally overridden
