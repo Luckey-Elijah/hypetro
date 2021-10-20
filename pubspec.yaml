@@ -1,0 +1,26 @@
+name: hypetro
+description: the overly? opinionated framework.
+version: 0.0.1
+# homepage:
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_bloc: ^7.3.1
+  meta: ^1.7.0
+
+dev_dependencies:
+  bloc_test: ^8.3.0
+  flutter_lints: ^1.0.0
+  flutter_test:
+    sdk: flutter
+
+  mockito: ^5.0.16
+  very_good_analysis: ^2.3.0
+
+flutter:
