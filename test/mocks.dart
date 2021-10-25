@@ -4,7 +4,15 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hypetro/hypetro.dart';
 
-class MockMyBloc extends MockBloc<int, int> implements MyBloc {}
+class MockMyBloc extends MockBloc<int, int> implements MyBloc {
+  MockMyBloc() {
+    whenListen(
+      this,
+      Stream.fromIterable([0, 1, 2, 3]),
+      initialState: 0,
+    );
+  }
+}
 
 class MyBloc extends Bloc<int, int> {
   MyBloc() : super(0);
