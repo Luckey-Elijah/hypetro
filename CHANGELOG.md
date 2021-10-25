@@ -7,5 +7,5 @@
   * [X] [`ViewActions`](./lib/src/view_actions.dart)
   * [X] [`ViewController`](./lib/src/view_controller.dart)
   * [X] [`ViewModel`](./lib/src/view_model.dart)
-* [ ] Fully tests components
+* [X] Fully tests components
 * [X] Adds fully functional [`example`](./example) app
