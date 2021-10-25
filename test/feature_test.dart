@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:hypetro/hypetro.dart';
-import 'package:provider/src/provider.dart';
 
 import 'mocks.dart';
 
@@ -27,12 +27,9 @@ void main() {
     testWidgets('bloc can be read', (tester) async {
       await tester.pumpWidget(
         MyFeature(
-          Builder(
-            builder: (context) {
-              final bloc = context.read<MockMyBloc>();
-              expect(bloc, isNotNull);
-              expect(bloc, isA<MockMyBloc>());
-
+          BlocBuilder<MockMyBloc, int>(
+            builder: (context, state) {
+              expect(state, 0);
               return const SizedBox(key: Key('MyFeature-child'));
             },
           ),
