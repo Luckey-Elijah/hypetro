@@ -1,3 +1,5 @@
+# CHANGELOG
+
 ## 0.0.2
 
 * Updates `Bloc` casting to `BlocBase` so a `Cubit` can be used.
