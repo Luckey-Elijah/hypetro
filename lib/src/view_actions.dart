@@ -7,7 +7,7 @@ import 'package:meta/meta.dart';
 /// View actions should be assign to a view.
 /// {@endtemplate}
 @immutable
-abstract class ViewActions<B extends BlocBase> {
+abstract class ViewActions<B extends BlocBase<dynamic>> {
   /// {@macro view_actions}
   const ViewActions(this._bloc);
 
