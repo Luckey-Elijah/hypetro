@@ -1,6 +1,6 @@
 name: hypetro
 description: An opinionated UI layer framework. Created to use with flutter_bloc.
-version: 0.0.1
+version: 0.0.2
 repository: https://github.com/Luckey-Elijah/hypetro
 issue_tracker: https://github.com/Luckey-Elijah/hypetro/issues
 
