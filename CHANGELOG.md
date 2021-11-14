@@ -1,5 +1,9 @@
 ## 0.0.1
 
+* Updates `Bloc` casting to `BlocBase` so a `Cubit` can be used.
+
+## 0.0.1
+
 * [X] Initial release of hypetro! 🎉
 * [X] Adds the follow components:
   * [X] [`Feature`](./lib/src/feature.dart)
